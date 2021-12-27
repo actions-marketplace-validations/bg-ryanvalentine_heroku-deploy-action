@@ -1,0 +1,30 @@
+{
+  "name": "heroku-container-deploy",
+  "version": "1.0.0",
+  "description": "A simple github action that deploy a container to heroku app",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiltshift/heroku-promote-app.git"
+  },
+  "keywords": [
+    "heroku",
+    "promote",
+    "pipeline",
+    "github",
+    "github-actions"
+  ],
+  "author": "Tilt/Shift",
+  "bugs": {
+    "url": "https://github.com/tiltshift/heroku-promote-app/issues"
+  },
+  "homepage": "https://github.com/tiltshift/heroku-promote-app#readme",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.0"
+  }
+}
