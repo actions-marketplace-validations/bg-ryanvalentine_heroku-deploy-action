@@ -23,9 +23,6 @@ try {
   execSync(createCatFile(heroku))
   console.log('Created and wrote to ~./netrc')
 
-  execSync('heroku login')
-  console.log('Successfully logged into heroku')
-
   execSync(`heroku ${heroku.command}`);
 
   core.setOutput(
