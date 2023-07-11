@@ -1,21 +1,18 @@
-name: "Heroku Container Deploy"
-description: "Publish an container to Heroku app"
+name: "Heroku Container Deploy & Release"
+description: "Push a container to Heroku and deploy."
 branding:
   icon: "arrow-right"
   color: "purple"
 inputs:
-  heroku_api_key:
-    description: "This will be used for authentication. You can find it in your heroku homepage account settings"
-    required: true
   heroku_email:
-    description: "Email that you use with heroku"
+    description: "Heroku email address."
     required: true
   heroku_command:
-    description: "The appname being promoted"
+    description: "Heroku application name."
     required: true
 outputs:
   status:
-    description: "The Success/Failure of the action"
+    description: "The success / failure of the action."
 runs:
   using: "node12"
   main: "index.js"
